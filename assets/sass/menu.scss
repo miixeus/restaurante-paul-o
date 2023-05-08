@@ -1,0 +1,186 @@
+.menu {
+    width: 100%;
+    height: 58.12rem;
+    background-color: white;
+    flex-direction: column;
+    align-items: center;
+    .belt {
+        width: 100%;
+        height: 15.5rem;
+        background-color: #C80000;
+        margin-top: 5.12rem;
+        position: relative;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        .belt-title {
+            width: 14rem;
+            height: 2.18rem;
+            background-color: #FFDE59;
+            align-items: center;
+            justify-content: center;
+            box-shadow: 1px 4px 6px rgb(56, 56, 56);
+            border-radius: .2rem;
+            position: absolute;
+            left: 1.5rem;
+            top: -1.18rem;
+            .title-belt {
+                font-size: 1.25rem;
+                text-transform: uppercase;
+                text-align: center;
+            }
+        }
+        .options-belt-free {
+            max-width: 90%;
+            width: 26.62rem;
+            height: 8.25rem;
+            background-color: #F5F5EF;
+            box-shadow: 1px 4px 6px rgb(56, 56, 56);
+            margin-top: 8.5rem;
+            border-radius: .4rem;
+            flex-direction: row;
+            align-items: center;
+            justify-content:space-between;
+            .img-belt {
+                width: 100%;
+                flex-direction: row;
+                justify-content: space-between;
+                align-items: center;
+                position: relative;
+                img {
+                    height: 87px;
+                    width: 120px;
+                    margin: .3rem .3rem 1.3rem 2rem;
+                    align-items: center;
+                }
+             }
+            .reverse-config {
+                flex-direction: column;
+                justify-content: center;
+                .buffet-title {
+                    width: 12.9rem;
+                    font-size: 20px;
+                    text-transform: uppercase;
+                    margin-bottom: 1rem;
+                }
+                .paragraph-title {
+                    font-size: 15px;
+                    font-weight: 700;
+                    font-family:  "OpenSans"; 
+    
+                }
+            }
+
+
+
+        }
+        .options-belt {
+            max-width: 90%;
+            width: 26.62rem;
+            height: 8.25rem;
+            background-color: #F5F5EF;
+            box-shadow: 1px 4px 6px rgb(56, 56, 56);
+            margin-top: 2.5rem;
+            border-radius: .4rem;
+            flex-direction: row;
+            align-items: center;
+            justify-content:space-between;
+            .img-belt {
+                width: 100%;
+                flex-direction: row;
+                justify-content: space-between;
+                align-items: center;
+                position: relative;
+                img {
+                    height: 87px;
+                    width: 120px;
+                    margin: 1rem .3rem 1.3rem 2rem;
+                    align-items: center;
+                }
+             }
+            .reverse-config {
+                flex-direction: column;
+                justify-content: center;
+                .buffet-title {
+                    width: 12.9rem;
+                    font-size: 20px;
+                    text-transform: uppercase;
+                    margin-bottom: 1rem;
+                }
+                .paragraph-title {
+                    font-size: 15px;
+                    font-weight: 700;
+                    font-family:  "OpenSans"; 
+    
+                }
+            }
+
+
+
+        }
+
+    }
+    .options-belt-menu {
+        max-width: 90%;
+        width: 26.62rem;
+        height: 20.25rem;
+        background-color: #F5F5EF;
+        box-shadow: 1px 4px 6px rgb(56, 56, 56);
+        margin-top: 12.5rem;
+        border-radius: .4rem;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        .buffet-title {
+            margin: 1rem;
+            text-align: center;
+            font-size: 18px;
+            margin-bottom: 1rem;
+        }
+        .row-menu{
+            justify-content: center;
+            align-items: center;
+            margin-top: 2rem;
+            .img-belt {
+                width: 100%;
+                flex-direction: row;
+                justify-content: space-between;
+                align-items: center;
+                position: relative;
+                img {
+                    align-items: center;
+                    padding: 0 1rem;
+                }
+             }
+             .logo-menu {
+                width: 128px;
+                height: 128px;
+                position: absolute;
+                z-index: 1000;
+                left: 4.5rem;
+
+             }
+
+            .reverse-config {
+                flex-direction: column;
+                justify-content: center;
+                .buffet-title {
+                    width: 12.9rem;
+                    font-size: 20px;
+                    text-transform: uppercase;
+                    margin-bottom: 1rem;
+                }
+                .paragraph-title {
+                    font-size: 15px;
+                    font-weight: 700;
+                    font-family:  "OpenSans"; 
+    
+                }
+            }
+        }
+
+
+
+
+    }
+}

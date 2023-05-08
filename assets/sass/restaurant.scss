@@ -1,0 +1,47 @@
+#restaurant {
+    width: 100%;
+    height: 62.5rem;
+    background-color: #FFDE59;
+    flex-direction: column;
+    .restaurant-image {
+        margin-top: 6.81rem;
+        img{
+            box-shadow: 1px 4px 12px black;
+        }
+        
+    }
+    .flex-box {
+        flex-direction: row;
+        align-items: center;
+        width: 100%;
+        height: 10rem;
+        position: relative;
+        .img-title {
+            position: absolute;
+            left: 2rem;
+            padding: 2rem 2rem 2rem 0;
+        }
+        .title-two {
+            width: 100%;
+            height: 3.12rem;
+            align-items: center;
+            font-size: 1.4rem;
+            justify-content: center;
+        }
+    }
+    .paragraph {
+        padding: 1.2rem;
+        width: 100%;
+        height: 32.56rem;
+        flex-direction: column;
+        font-family: OpenSans;
+        justify-content: space-between;
+        font-size: 1.3rem;
+        align-items: center;
+        text-align: center;
+        span {
+            font-weight: 700;
+        }
+    }
+
+}

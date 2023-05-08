@@ -1,0 +1,26 @@
+{
+    "name": "Restaurante do Paulão",
+    "version": "1.0.0",
+    "description": "",
+    "main": "index.html",
+    "scripts": {
+        "sass": "sass --watch assets/sass/main.scss:assets/css/main.css",
+        "start": "parcel index.html --open",
+        "build": "parcel build index.html"
+    },
+    "keywords": [],
+    "author": "",
+    "license": "ISC",
+    "devDependencies": {
+        "@babel/core": "7.2.0",
+        "sass": "^1.26.10"
+    },
+    "dependencies": {
+        "embla-carousel": "^8.0.0-rc02",
+        "jquery": "^3.6.3",
+        "parcel-bundler": "^1.6.1"
+    },
+    "resolutions": {
+        "@babel/preset-env": "7.13.8"
+    }
+}
