@@ -1,0 +1,35 @@
+.coments {
+    width: 100%;
+    height: 45rem;
+    background-color: #386C2B;
+    flex-direction: column;
+    align-items: center;
+    .title-coments {
+        width: 100%;
+        height: 8rem;
+        background-color: #F5F5EF;
+        margin-top: 4rem;
+        text-align: center;
+        justify-content: center;
+        align-items: center;
+        text-transform: uppercase;
+        font-size: 1.8rem;
+    }
+    .img-title-coments {
+        width: 100%;
+        height: 5.5rem;
+        margin-top: 2rem;
+        justify-content: center;
+        img {
+            width: 26.5rem;
+            max-width: 100%;
+        }
+       
+    }
+    .img-title-comentary {
+        flex-direction: column;
+        margin-top: 6rem;
+        justify-content: space-between;
+        height: 17rem;
+    }
+}

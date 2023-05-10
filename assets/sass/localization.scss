@@ -1,0 +1,66 @@
+.localization {
+    background-image: url(../images/back-tomato.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    width: 100%;
+    height: 61.5rem;
+    background-color: white;
+    flex-direction: column;
+    align-items: center;
+    position: relative;
+    .localization-title {
+        width: 15.5rem;
+        height: 2.7rem;
+        background-color: #FFDE59;
+        align-items: center;
+        justify-content: center;
+        box-shadow: 1px 4px 10px rgb(56, 56, 56);
+        border-radius: .2rem;
+        position: absolute;
+        left: 1.5rem;
+        top: 3.18rem;
+        padding: .5rem;
+        .title-localization {
+            font-size: 1.25rem;
+            text-transform: uppercase;
+            text-align: center;
+        }
+    }
+    .img-localization {
+        width: 100%;
+        height: 30rem;
+        align-items: center;
+        justify-content: center;
+        margin-top: 3.5rem;
+        img {
+            width: 100%;
+            height: 28rem;
+        }
+    }
+    .rota {
+        width: 100%;
+        justify-content: center;
+        margin-top: 1rem;
+    }
+    #myButton {
+        display: flex;
+        color: white;
+        width: 11.43rem;
+        height: 3.25rem;
+        background-color: #008037;
+        font-size: 1.3rem;
+        font-weight: bold;
+        box-shadow: 1px 4px 8px black;
+        z-index: 2;
+        justify-content: center;
+        align-items: center;
+        text-align: center;
+        border-radius: 40px;
+        margin-top: 6rem;
+        transition: all .3s;
+    }
+    #myButton:hover {
+        transition: all .3s;
+        transform: scale(1.1);
+    }
+}

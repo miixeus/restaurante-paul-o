@@ -42,12 +42,14 @@
     color: white;
     z-index: 2;
   }
-  .button-first {
+  #myButton {
+    display: flex;
     width: 11.43rem;
     height: 4.25rem;
     background-color: #008037;
     color: white;
-    font-size: 14px;
+    font-size: 1rem;
+    font-weight: bold;
     box-shadow: 1px 4px 8px black;
     z-index: 2;
     justify-content: center;
@@ -55,5 +57,10 @@
     text-align: center;
     border-radius: 40px;
     margin-top: 4rem;
+    transition: all .3s;
   }
+  #myButton:hover {
+    transition: all .3s;
+    transform: scale(1.1);
+}
 }
