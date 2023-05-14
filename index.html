@@ -3,6 +3,8 @@
     <meta charset="UTF-8"/>
     <meta http-equiv="X-UA-Compatible" content="IE=edge"/>
     <link rel="stylesheet" href="assets/css/main.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.7.1/slick.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.7.1/slick-theme.css">
     <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
     <link rel="apple-touch-icon" sizes="60x60" href="assets/favicon/apple-icon-60x60.png"/>
     <link rel="apple-touch-icon" sizes="72x72" href="assets/favicon/apple-icon-72x72.png"/>
@@ -89,73 +91,22 @@
         </div>
 
     </section>
-    <section class="sandbox__carousel">
-        <div class="embla">
-          <div class="embla__viewport">
-            <div class="embla__container">
-              <div class="embla__slide">
-                <div class="embla__slide__number"><span>1</span></div>
-                <div class="embla__parallax">
-                  <div class="embla__parallax__layer">
-                    <img
-                      class="embla__slide__img embla__parallax__img"
-                      src="assets/images/layer-1.png"
-                      alt="Your alt text"
-                    />
-                  </div>
-                </div>
-              </div>
-              <div class="embla__slide">
-                <div class="embla__slide__number"><span>2</span></div>
-                <div class="embla__parallax">
-                  <div class="embla__parallax__layer">
-                    <img
-                      class="embla__slide__img embla__parallax__img"
-                      src="assets/images/layer-2.png"
-                      alt="Your alt text"
-                    />
-                  </div>
-                </div>
-              </div>
-              <div class="embla__slide">
-                <div class="embla__slide__number"><span>3</span></div>
-                <div class="embla__parallax">
-                  <div class="embla__parallax__layer">
-                    <img
-                      class="embla__slide__img embla__parallax__img"
-                      src="assets/images/layer-3.png"
-                      alt="Your alt text"
-                    />
-                  </div>
-                </div>
-              </div>
-              <div class="embla__slide">
-                <div class="embla__slide__number"><span>4</span></div>
-                <div class="embla__parallax">
-                  <div class="embla__parallax__layer">
-                    <img
-                      class="embla__slide__img embla__parallax__img"
-                      src="assets/images/layer-4.png"
-                      alt="Your alt text"
-                    />
-                  </div>
-                </div>
-              </div>
-              <div class="embla__slide">
-                <div class="embla__slide__number"><span>5</span></div>
-                <div class="embla__parallax">
-                  <div class="embla__parallax__layer">
-                    <img
-                      class="embla__slide__img embla__parallax__img"
-                      src="assets/images/layer-5.png"
-                      alt="Your alt text"
-                    />
-                  </div>
-                </div>
-              </div>
-            </div>
-          </div>
-        </div>  
+    <section class="carousel carousel-media">
+        <div>
+          <img src="assets/images/layer-1.png" alt="Your alt text"/>
+        </div>
+        <div>
+          <img src="assets/images/layer-2.png" alt="Your alt text"/>
+        </div>
+        <div>
+          <img src="assets/images/layer-3.png" alt="Your alt text"/>
+        </div>
+        <div>
+          <img src="assets/images/layer-4.png" alt="Your alt text"/>
+        </div>
+        <div>
+          <img src="assets/images/layer-5.png"alt="Your alt text"/>
+        </div> 
     </section>
       <section class="menu">
         <div class="belt">
@@ -301,7 +252,19 @@
     </main>
 
       <script src="js/index.js"></script>
-      <script src="js/tween-parallax.js"></script>
+                
+      <script type="text/javascript" src="script.js"></script>
+      <!--Start slick-carousel-->
+      <script type="text/javascript" src="https://code.jquery.com/jquery-1.11.0.min.js"></script>
+      <script type="text/javascript" src="https://code.jquery.com/jquery-migrate-1.2.1.min.js"></script>
+      <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.7.1/slick.js"></script>
+      <script type="text/javascript" src="slick.js"></script>
+      <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+      <script>
+        AOS.init({
+          duration: 1000,
+        });
+      </script>
 
 
       

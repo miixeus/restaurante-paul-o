@@ -1,0 +1,24 @@
+.carousel {
+    background-color: #FFDE59;
+}
+.carousel-media {
+    margin: 0;
+    padding: 0;
+    width: 245px;
+    height: 30rem;
+    justify-content: center;
+    align-items: center;
+       
+}
+.slick-next {
+    right: 3px;
+}
+.slick-prev {
+    color: black;
+    right: 3px;
+}
+.slick-prev:before, .slick-next:before{
+    font-size: 0;
+}
+
+
