@@ -44,6 +44,7 @@
             .img-belt {
                 width: 100%;
                 flex-direction: row;
+                padding-right: 2.1rem;
                 justify-content: space-between;
                 align-items: center;
                 position: relative;
@@ -57,8 +58,8 @@
             .reverse-config {
                 flex-direction: column;
                 justify-content: center;
+                align-items: center;
                 .buffet-title {
-                    width: 12.9rem;
                     font-size: 20px;
                     text-transform: uppercase;
                     margin-bottom: 1rem;
@@ -88,6 +89,7 @@
             .img-belt {
                 width: 100%;
                 flex-direction: row;
+                padding-right: 1.1rem;
                 justify-content: space-between;
                 align-items: center;
                 position: relative;
@@ -101,11 +103,12 @@
             .reverse-config {
                 flex-direction: column;
                 justify-content: center;
+                margin-left: 2rem;
                 .buffet-title {
-                    width: 12.9rem;
-                    font-size: 20px;
+                    font-size: 18px;
                     text-transform: uppercase;
                     margin-bottom: 1rem;
+
                 }
                 .paragraph-title {
                     font-size: 15px;

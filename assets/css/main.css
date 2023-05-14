@@ -54,6 +54,7 @@ body {
   margin: 0;
   padding: 0;
   overflow-x: hidden;
+  min-width: 320px;
 }
 
 button {
@@ -80,22 +81,21 @@ button {
 
 #home {
   min-width: 320px;
+  background-size: cover;
+  justify-content: center;
+  z-index: 1;
+  max-width: 100%;
+  background-image: url(../images/Background-case.png);
   width: 100%;
   height: 56rem;
   display: flex;
   flex-direction: column;
   align-items: center;
 }
-#home .background-home {
-  width: 100%;
-  background-size: cover;
-  justify-content: center;
-  z-index: 1;
-}
 #home .food-title {
   flex-direction: column;
   align-items: center;
-  margin-top: -54rem;
+  margin-top: 2rem;
   z-index: 2;
 }
 #home .food-title .box-food {
@@ -109,7 +109,7 @@ button {
   justify-content: center;
 }
 #home .title {
-  margin-top: 13rem;
+  margin-top: 8rem;
   width: 14.06rem;
   height: 100px;
   font-size: 25px;
@@ -141,6 +141,27 @@ button {
   transform: scale(1.1);
 }
 
+@media (min-width: 768px) {
+  #home .food-title {
+    flex-direction: row;
+    align-items: center;
+    width: 591px;
+    justify-content: center;
+  }
+  #home .food-title .box-food {
+    padding: 0.5rem;
+  }
+  #home .food-title .box-food .food {
+    font-size: 18px;
+    margin-right: 1.8rem;
+  }
+  #home .title {
+    width: 30rem;
+    height: 12rem;
+    margin-top: 4rem;
+    font-size: 40px;
+  }
+}
 #restaurant {
   width: 100%;
   height: 62.5rem;
@@ -153,26 +174,29 @@ button {
 #restaurant .restaurant-image img {
   box-shadow: 1px 4px 12px black;
 }
-#restaurant .flex-box {
+#restaurant .breackpoint {
+  flex-direction: column;
+}
+#restaurant .breackpoint .flex-box {
   flex-direction: row;
   align-items: center;
   width: 100%;
   height: 10rem;
   position: relative;
 }
-#restaurant .flex-box .img-title {
+#restaurant .breackpoint .flex-box .img-title {
   position: absolute;
   left: 2rem;
   padding: 2rem 2rem 2rem 0;
 }
-#restaurant .flex-box .title-two {
+#restaurant .breackpoint .flex-box .title-two {
   width: 100%;
   height: 3.12rem;
   align-items: center;
   font-size: 1.4rem;
   justify-content: center;
 }
-#restaurant .paragraph {
+#restaurant .breackpoint .paragraph {
   padding: 1.2rem;
   width: 100%;
   height: 32.56rem;
@@ -183,10 +207,57 @@ button {
   align-items: center;
   text-align: center;
 }
-#restaurant .paragraph span {
+#restaurant .breackpoint .paragraph span {
   font-weight: 700;
 }
 
+@media (min-width: 768px) {
+  #restaurant {
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+  }
+  #restaurant .restaurant-image {
+    margin: 6.81rem 9rem;
+    border-left: solid 5px deepskyblue;
+  }
+  #restaurant .breackpoint {
+    flex-direction: column;
+  }
+  #restaurant .breackpoint .flex-box {
+    flex-direction: row;
+    align-items: center;
+    width: 100%;
+    height: 10rem;
+    position: relative;
+  }
+  #restaurant .breackpoint .flex-box .img-title {
+    position: absolute;
+    left: 2rem;
+    padding: 2rem 2rem 2rem 0;
+  }
+  #restaurant .breackpoint .flex-box .title-two {
+    width: 100%;
+    height: 3.12rem;
+    align-items: center;
+    font-size: 1.4rem;
+    justify-content: center;
+  }
+  #restaurant .breackpoint .paragraph {
+    padding: 0.1rem 5.2rem;
+    width: 80%;
+    height: 26.56rem;
+    flex-direction: column;
+    font-family: OpenSans;
+    justify-content: space-between;
+    font-size: 1.5rem;
+    align-items: center;
+    text-align: center;
+  }
+  #restaurant .breackpoint .paragraph span {
+    font-weight: 700;
+  }
+}
 #photos {
   background-color: #FFDE59;
   width: 100%;
@@ -463,6 +534,7 @@ button {
 .menu .belt .options-belt-free .img-belt {
   width: 100%;
   flex-direction: row;
+  padding-right: 2.1rem;
   justify-content: space-between;
   align-items: center;
   position: relative;
@@ -476,9 +548,9 @@ button {
 .menu .belt .options-belt-free .reverse-config {
   flex-direction: column;
   justify-content: center;
+  align-items: center;
 }
 .menu .belt .options-belt-free .reverse-config .buffet-title {
-  width: 12.9rem;
   font-size: 20px;
   text-transform: uppercase;
   margin-bottom: 1rem;
@@ -503,6 +575,7 @@ button {
 .menu .belt .options-belt .img-belt {
   width: 100%;
   flex-direction: row;
+  padding-right: 1.1rem;
   justify-content: space-between;
   align-items: center;
   position: relative;
@@ -516,10 +589,10 @@ button {
 .menu .belt .options-belt .reverse-config {
   flex-direction: column;
   justify-content: center;
+  margin-left: 2rem;
 }
 .menu .belt .options-belt .reverse-config .buffet-title {
-  width: 12.9rem;
-  font-size: 20px;
+  font-size: 18px;
   text-transform: uppercase;
   margin-bottom: 1rem;
 }
@@ -740,13 +813,15 @@ button {
   font-weight: bold;
 }
 .background .opinyon-img .absolute {
+  display: flex;
   margin-left: 0.1rem;
+  z-index: 22;
   -webkit-animation: shake-vertical 1.8s cubic-bezier(0.455, 0.03, 0.505, 0.855) infinite;
   animation: shake-vertical 2.8s cubic-bezier(0.455, 0.03, 0.505, 0.855) both;
 }
 .background .opinyon-img .absolute img {
-  width: 20px;
-  height: 25px;
+  width: 18px;
+  height: 20px;
 }
 @-webkit-keyframes shake-vertical {
   0%, 100% {
@@ -798,8 +873,8 @@ button {
   transition: all 0.3s;
 }
 .background .absolute-stars img {
-  width: 12rem;
-  height: 6rem;
+  width: 10.8rem;
+  height: 5rem;
 }
 .background .absolute-stars:hover {
   transform: scale(1.1);
