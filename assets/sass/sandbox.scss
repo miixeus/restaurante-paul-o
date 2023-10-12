@@ -10,19 +10,17 @@
   }
   .sandbox__carousel {
     position: relative;
-    background-color: var(--background-code);
   }
   @media (max-width: 749px) {
     .sandbox__carousel {
-      border-top: 0.1rem solid var(--detail-low-contrast);
-      border-bottom: 0.1rem solid var(--detail-low-contrast);
-      
+      border-top: 0.1rem solid black;
+      border-bottom: 0.1rem solid black;
     }
   }
   @media (min-width: 750px) {
     .sandbox__carousel {
       border-radius: 0.4rem;
-      border: 0.1rem solid var(--detail-low-contrast);
+      border: 0.1rem solid black;
     }
   }
   .sandbox__header {
@@ -43,7 +41,7 @@
     text-decoration: none;
     text-align: center;
     font-weight: 700;
-    color: var(--text-low-contrast);
+    color: gray;
     font-size: 1.4rem;
   }
   .sandbox__footer__link__svg {
@@ -53,4 +51,3 @@
     margin-right: 1rem;
     fill: currentColor;
   }
-  

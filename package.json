@@ -14,8 +14,10 @@
         "sass": "^1.26.10"
     },
     "dependencies": {
+        "@splidejs/splide": "^4.1.4",
         "embla-carousel": "^8.0.0-rc02",
-        "jquery": "^3.6.3"
+        "jquery": "^3.6.3",
+        "swiper": "^10.0.4"
     },
     "resolutions": {
         "@babel/preset-env": "7.13.8"

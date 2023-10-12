@@ -32,7 +32,9 @@
         align-items: center;
         justify-content: center;
         margin-top: 3.5rem;
+
         img {
+            box-shadow: 1px 1px 4px black;
             width: 100%;
             height: 28rem;
         }
@@ -41,6 +43,9 @@
         width: 100%;
         justify-content: center;
         margin-top: 1rem;
+    }
+    .button-full {
+        display: none;
     }
     #myButton {
         display: flex;
@@ -62,5 +67,97 @@
     #myButton:hover {
         transition: all .3s;
         transform: scale(1.1);
+    }
+}
+@media (min-width: 768px) {
+    .localization {
+        background-image: url(../images/back-tomato-full.png);
+        background-repeat: no-repeat;
+        background-size: cover;
+        width: 100%;
+        height: 42.5rem;
+        background-color: white;
+        flex-direction: row-reverse;
+        align-items: center;
+        position: relative;
+        .localization-title {
+            width: 15.5rem;
+            height: 2.7rem;
+            background-color: #FFDE59;
+            align-items: center;
+            justify-content: center;
+            box-shadow: 1px 4px 10px rgb(56, 56, 56);
+            border-radius: .2rem;
+            position: absolute;
+            left: 1.5rem;
+            top: 3.18rem;
+            padding: .5rem;
+            .title-localization {
+                font-size: 1.25rem;
+                text-transform: uppercase;
+                text-align: center;
+            }
+        }
+        .img-localization {
+            width: 100%;
+            height: 30rem;
+            align-items: center;
+            justify-content: right;
+            margin-top: 3.5rem;
+    
+            img {
+                box-shadow: none;
+                width: 100%;
+                height: 28rem;
+            }
+        }
+        .rota {
+            display: none;
+            width: 100%;
+            justify-content: center;
+            margin-top: 1rem;
+        }
+        .button-full {
+            width: 100%;
+            flex-direction: row;
+            display: flex;
+            background-color: FF1616;
+            font-size: 0.7rem;
+            font-weight: bold;
+            box-shadow: 1px 4px 8px black;
+            z-index: 2;
+            justify-content: center;
+            align-items: center;
+            text-align: center;
+            border-radius: 50px;
+            margin-top: 6rem;
+            margin-left: 1rem;
+            transition: all .3s;
+            justify-content: space-between;
+            .button__link {
+                width: 100%;
+                display: flex;
+                flex-direction: row;
+                align-items: center;
+                .button__text {
+                    color: white;
+                    width: 100%;
+                    height: 3.25rem;
+                    padding-left: 0.3rem;
+                }
+                img {
+                    width: 91px;
+                    height: 91px;
+                }
+            }
+        }
+        #myButton {
+            display: none;
+
+        }
+        .button-full:hover {
+            transition: all .3s;
+            transform: scale(1.1);
+        }
     }
 }

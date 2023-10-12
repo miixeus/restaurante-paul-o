@@ -42,7 +42,7 @@
             margin-left: .1rem;
             z-index: 22;
             -webkit-animation: shake-vertical 1.8s cubic-bezier(0.455, 0.030, 0.505, 0.855) infinite ;
-	        animation: shake-vertical 2.8s cubic-bezier(0.455, 0.030, 0.505, 0.855) both;
+	        animation: shake-vertical 2.8s cubic-bezier(0.455, 0.030, 0.505, 0.855) infinite;
             img {
             width: 18px;
             height: 20px;

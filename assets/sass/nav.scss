@@ -5,6 +5,7 @@
     justify-content: end;
     .pin {
         flex-direction: row;
+        border-bottom: 1px solid gray;
     }
     .text-pin {
         display: flex;

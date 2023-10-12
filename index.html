@@ -2,9 +2,9 @@
 <head>
     <meta charset="UTF-8"/>
     <meta http-equiv="X-UA-Compatible" content="IE=edge"/>
-    <link rel="stylesheet" href="assets/css/main.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.7.1/slick.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.7.1/slick-theme.css">
+    <link rel="stylesheet" href="assets/css/main.css">
     <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
     <link rel="apple-touch-icon" sizes="60x60" href="assets/favicon/apple-icon-60x60.png"/>
     <link rel="apple-touch-icon" sizes="72x72" href="assets/favicon/apple-icon-72x72.png"/>
@@ -52,7 +52,7 @@
                 </div>
                 <div>
                     <picture>
-                        <img src="assets/images/logo.png" alt="Logo do Restaurante" width="135px" height="129px">
+                        <img src="assets/images/logo.png" alt="Logo do Restaurante" width="68px" height="63px">
                     </picture>
                 </div>
                 <div class="box-food">
@@ -80,7 +80,7 @@
                 </div>
             </div>
             <div class="paragraph">
-                <p>
+                <p class="par-1">
                     Às margens da Rodovia Governador Leonel de Moura Brizola encontra-se nosso restaurante. Com fachada mesurada e amplo espaço para estacionamento, temos à disposição do viajante, <span> Banheiros Limpos </span> e <span> Cheirosos</span> , com <span> Acesso Externo </span>, dando <span>Privacidade</span>  e <span>Conforto</span>  aos nossos clientes. 
                 </p>
                 <p>
@@ -91,23 +91,7 @@
         </div>
 
     </section>
-    <section class="carousel carousel-media">
-        <div>
-          <img src="assets/images/layer-1.png" alt="Your alt text"/>
-        </div>
-        <div>
-          <img src="assets/images/layer-2.png" alt="Your alt text"/>
-        </div>
-        <div>
-          <img src="assets/images/layer-3.png" alt="Your alt text"/>
-        </div>
-        <div>
-          <img src="assets/images/layer-4.png" alt="Your alt text"/>
-        </div>
-        <div>
-          <img src="assets/images/layer-5.png"alt="Your alt text"/>
-        </div> 
-    </section>
+   
       <section class="menu">
         <div class="belt">
           <div class="belt-title">
@@ -155,7 +139,7 @@
                   </picture>
                   <a href="menu.html" class="logo-menu" target="_blank">
                     <picture>
-                      <img src="assets/images/logo.png" alt="símbolo do restaurante">
+                      <img src="assets/images/image-cardapio.png" alt="símbolo do restaurante">
                     </picture>
                   </a>
                   <picture>
@@ -194,13 +178,25 @@
             <div class="img-localization">
               <a href="https://www.google.com/maps/dir/-29.1370079,-51.513655/Restaurante+e+Lancheria+Paul%C3%A3o+-+Rodovia+Governador+Leonel+de+Moura+Brizola+-+Fontoura+Xavier,+RS/@-29.2286467,-51.9394464,9z/data=!4m9!4m8!1m1!4e1!1m5!1m1!1s0x951d3f7a3fef7429:0x3bf61eb7241be518!2m2!1d-52.3726934!2d-28.9639562" target="_blank">  
                   <picture>
-                      <img src="assets/images/map.png" alt="Mapa do local">
+                       <source media="(min-width:768px )" srcset="assets/images/img-localization-full.png">
+                       <img src="assets/images/map.png" alt="Mapa do local">
                     </picture>
               </a>
             </div>
             <div class="rota">
               <h4>Adicione uma Rota até Nosso Restaurante</h4>
             </div>
+            <div class="button-full">
+              <a href="" class="button__link">
+                <h2 class="button__text">
+                  Clique na imagem para adicionar uma rota até nosso restaurante
+                 </h2>
+                 <picture>
+                  <img src="assets/images/arrow-localization.png" alt="seta">
+                 </picture>
+              </a>
+            </div>
+            
             <a href="https://www.google.com/maps/dir/-29.1370079,-51.513655/Restaurante+e+Lancheria+Paul%C3%A3o+-+Rodovia+Governador+Leonel+de+Moura+Brizola+-+Fontoura+Xavier,+RS/@-29.2286467,-51.9394464,9z/data=!4m9!4m8!1m1!4e1!1m5!1m1!1s0x951d3f7a3fef7429:0x3bf61eb7241be518!2m2!1d-52.3726934!2d-28.9639562" target="_blank" id="myButton"> Clique aqui!</a>
 
         </section>
@@ -224,7 +220,7 @@
             <picture class="absolute">
               <img src="assets/images/arrow.png" alt="Flecha apontando para a imagem">
             </picture>
-            <a href="#">
+            <a href="https://g.page/r/CRjlGyS3HvY7EAI/review">
             <picture class="absolute-stars">
               <img src="assets/images/stars.svg" alt="Imagem de estrelas">
             </picture>
@@ -251,23 +247,15 @@
         </footer>
     </main>
 
-      <script src="js/index.js"></script>
-                
+      <script src="js/index.js"></script>    
       <script type="text/javascript" src="script.js"></script>
-      <!--Start slick-carousel-->
       <script type="text/javascript" src="https://code.jquery.com/jquery-1.11.0.min.js"></script>
       <script type="text/javascript" src="https://code.jquery.com/jquery-migrate-1.2.1.min.js"></script>
       <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.7.1/slick.js"></script>
       <script type="text/javascript" src="slick.js"></script>
-      <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
-      <script>
-        AOS.init({
-          duration: 1000,
-        });
-      </script>
 
 
-      
+
       
 
 </body>

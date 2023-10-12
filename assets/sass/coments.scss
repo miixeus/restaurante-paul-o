@@ -33,3 +33,12 @@
         height: 17rem;
     }
 }
+@media (min-width: 768px) {
+    .coments {
+        height: 36rem;
+        .img-title-comentary {
+            flex-direction: row;
+            height: auto;
+        }
+    }
+}
