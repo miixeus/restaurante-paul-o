@@ -1048,6 +1048,11 @@ button {
   color: gray;
 }
 
+@media (min-width: 680px) {
+  .background {
+    background-image: url(../images/Background-Restaurant.png);
+  }
+}
 #class__carrousel {
   height: 40rem;
   background-color: #FFDE59;
