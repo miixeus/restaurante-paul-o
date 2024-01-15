@@ -62,14 +62,25 @@ button {
 }
 
 #header {
-  background-color: #CDB7A0;
+  background-image: url(../images/xadrez.png);
   display: flex;
   flex-direction: row;
   justify-content: end;
 }
+#header #back {
+  background-color: rgb(255, 255, 255);
+  margin: 0.2rem 0.5rem;
+  box-shadow: 1px 1px 3px gray;
+  border-radius: 0.4rem;
+}
 #header .pin {
-  flex-direction: row;
-  border-bottom: 1px solid gray;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+#header a {
+  display: flex;
+  align-items: center;
 }
 #header .text-pin {
   display: flex;
@@ -125,7 +136,7 @@ button {
   display: flex;
   width: 11.43rem;
   height: 4.25rem;
-  background-image: linear-gradient(180deg, #008037, #001308);
+  background-image: linear-gradient(180deg, #008037, #008638);
   color: white;
   font-size: 1rem;
   font-weight: bold;
@@ -172,13 +183,16 @@ button {
   width: 100%;
   height: 62.5rem;
   background-color: #FFDE59;
+  background-image: url(../images/background-restaurant\ \(320\ x\ 440\ px\).png);
   flex-direction: column;
 }
 #restaurant .restaurant-image {
   margin-top: 6.81rem;
+  justify-content: center;
 }
 #restaurant .restaurant-image img {
-  box-shadow: 1px 4px 12px black;
+  width: 90%;
+  height: auto;
 }
 #restaurant .breackpoint {
   flex-direction: column;
@@ -212,9 +226,10 @@ button {
   justify-content: center;
 }
 #restaurant .breackpoint .paragraph {
+  background-color: #FFDE59;
   padding: 1.2rem;
   width: 100%;
-  height: 26.56rem;
+  height: 23.56rem;
   flex-direction: column;
   font-family: "OpenSans";
   font-size: 0.9rem;
@@ -230,7 +245,13 @@ button {
 
 @media (min-width: 480px) {
   #restaurant {
-    height: 54rem;
+    height: 65rem;
+  }
+  #restaurant .restaurant-image {
+    margin-top: 4rem;
+  }
+  #restaurant .restaurant-image img {
+    min-height: max-content;
   }
   #restaurant .breackpoint {
     align-items: center;
@@ -239,28 +260,60 @@ button {
     display: flex;
   }
   #restaurant .breackpoint .paragraph {
-    height: 14rem;
-    justify-content: center;
+    height: 22rem;
+    justify-content: space-around;
+    width: 80%;
+  }
+}
+@media (min-width: 560px) {
+  #restaurant {
+    height: 75rem;
+  }
+  #restaurant .restaurant-image {
+    margin-top: 4rem;
+  }
+  #restaurant .restaurant-image img {
+    min-height: max-content;
+  }
+  #restaurant .breackpoint {
+    align-items: center;
+  }
+  #restaurant .breackpoint .flex-box .img-title {
+    display: flex;
+  }
+  #restaurant .breackpoint .paragraph {
+    height: 22rem;
+    justify-content: space-around;
     width: 80%;
   }
 }
 @media (min-width: 768px) {
   #restaurant {
+    flex-direction: row;
     justify-content: flex-start;
+    height: 32.5rem;
+    width: 100%;
+  }
+  #restaurant .restaurant-image {
+    justify-content: start;
+    display: flex;
     align-items: center;
-    height: 72.5rem;
   }
   #restaurant .restaurant-image img {
-    border-left: solid 5px deepskyblue;
+    width: 27rem;
+    clip-path: polygon(0 0, 100% 0%, 88% 100%, 0% 100%);
   }
   #restaurant .breackpoint {
     flex-direction: column;
+    width: 60%;
+    justify-content: center;
+    margin-top: 4rem;
   }
   #restaurant .breackpoint .flex-box {
+    width: 100%;
     flex-direction: row;
     align-items: center;
-    width: 100%;
-    height: 10rem;
+    height: 7rem;
     position: relative;
   }
   #restaurant .breackpoint .flex-box .img-title {
@@ -268,21 +321,21 @@ button {
     padding: 2rem 2rem 2rem 0;
   }
   #restaurant .breackpoint .flex-box .title-two {
-    width: 80%;
+    width: 100%;
     height: 3.12rem;
     align-items: center;
-    font-size: 1.4rem;
+    font-size: 1rem;
     justify-content: center;
     margin-right: 1rem;
   }
   #restaurant .breackpoint .paragraph {
-    padding: 0.1rem 5.2rem;
-    width: 100%;
-    height: 26.56rem;
+    padding: 0.1rem 0.2rem;
+    width: 90%;
+    height: 14.56rem;
     flex-direction: column;
     font-family: OpenSans;
-    justify-content: space-between;
-    font-size: 1.5rem;
+    justify-content: space-around;
+    font-size: 0.8rem;
     align-items: center;
     text-align: center;
     margin-bottom: 4rem;
@@ -298,15 +351,14 @@ button {
     height: 50.5rem;
     flex-direction: row;
   }
-  #restaurant .restaurant-image {
-    margin: 1.81rem 4rem;
-  }
   #restaurant .restaurant-image img {
-    height: 18rem;
-    border-left: solid 5px deepskyblue;
+    width: 44rem;
+    height: 33rem;
   }
   #restaurant .breackpoint {
+    width: 100%;
     flex-direction: column;
+    padding: 1rem;
   }
   #restaurant .breackpoint .flex-box {
     flex-direction: row;
@@ -328,13 +380,13 @@ button {
     justify-content: center;
   }
   #restaurant .breackpoint .paragraph {
-    padding: 0.1rem 5.2rem;
+    padding: 0.1rem 0.2rem;
     width: 100%;
     height: 26.56rem;
     flex-direction: column;
     font-family: OpenSans;
-    justify-content: space-between;
-    font-size: 1.5rem;
+    justify-content: space-around;
+    font-size: 1.1rem;
     align-items: center;
     text-align: center;
     margin-bottom: 4rem;
@@ -1266,6 +1318,13 @@ button {
     font-size: 18px;
     margin-bottom: 15px;
   }
+}
+#xadrez {
+  background-image: url(../images/xadrez.png);
+  background-repeat: repeat-x;
+  width: 100%;
+  height: 3rem;
+  margin-top: -1rem;
 }
 
 /*# sourceMappingURL=main.css.map */

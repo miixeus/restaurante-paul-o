@@ -1,11 +1,22 @@
 #header {
-    background-color: #CDB7A0;
+    background-image: url(../images/xadrez.png);
     display: flex;
     flex-direction: row;
     justify-content: end;
+    #back {
+        background-color: rgb(255, 255, 255);
+        margin: 0.2rem 0.5rem;
+        box-shadow: 1px 1px 3px gray;
+        border-radius: 0.4rem;
+    }
     .pin {
-        flex-direction: row;
-        border-bottom: 1px solid gray;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+    a {
+        display: flex;
+        align-items: center;
     }
     .text-pin {
         display: flex;
